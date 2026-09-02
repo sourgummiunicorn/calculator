@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+@custom-variant dark (&:is(.dark *));
+@theme inline {
+  --color-background: var(--background); --color-foreground: var(--foreground);
+  --color-primary: var(--primary); --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary); --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted); --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent); --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive); --color-border: var(--border); --color-input: var(--input); --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) * .6); --radius-md: calc(var(--radius) * .8); --radius-lg: var(--radius); --radius-xl: calc(var(--radius) * 1.4);
+}
+:root {
+  --background: #fff5f8; --foreground: #3f2c34; --primary: #c95783; --primary-foreground: #fff;
+  --secondary: #f9dce7; --secondary-foreground: #713b50; --muted: #fbe9ef; --muted-foreground: #9b687c;
+  --accent: #f3c3d4; --accent-foreground: #683548; --destructive: #c65270; --border: #f0dce4; --input: #f0dce4; --ring: #d86f98; --radius: 1rem;
+}
+* { box-sizing: border-box; }
+html { background: var(--background); }
+body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-geist-sans), Arial, sans-serif; }
+button { touch-action: manipulation; }
+::selection { background: #f4bfd2; color: #4d2d39; }
